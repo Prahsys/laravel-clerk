@@ -86,4 +86,21 @@ return [
         'webhook_processing' => env('PRAHSYS_WEBHOOK_QUEUE', 'default'),
         'payment_processing' => env('PRAHSYS_PAYMENT_QUEUE', 'default'),
     ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Audit Logging Configuration
+    |--------------------------------------------------------------------------
+    */
+    'audit' => [
+        'enabled' => env('CLERK_AUDIT_ENABLED', true),
+        'model' => env('CLERK_AUDIT_MODEL', \Prahsys\LaravelClerk\Models\PrahsysAuditLog::class),
+        'table_name' => env('CLERK_AUDIT_TABLE', 'clerk_payment_audit_logs'),
+        'log_user_data' => env('CLERK_AUDIT_LOG_USER_DATA', true),
+        'retention_days' => env('CLERK_AUDIT_RETENTION_DAYS', 365),
+        'sensitive_fields' => [
+            'password', 'api_key', 'secret', 'token', 'card_number', 
+            'cvv', 'ssn', 'credit_card', 'pin', 'security_code'
+        ],
+    ],
 ];
