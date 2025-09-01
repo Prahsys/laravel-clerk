@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/phpunit.xml" tests="30" assertions="32" errors="11" failures="1" skipped="0" time="0.695384">
+    <testsuite name="Prahsys Clerk Test Suite" tests="30" assertions="32" errors="11" failures="1" skipped="0" time="0.695384">
+      <testsuite name="Prahsys\LaravelClerk\Tests\Feature\ServiceProviderTest" file="/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Feature/ServiceProviderTest.php" tests="3" assertions="3" errors="0" failures="0" skipped="0" time="0.167705">
+        <testcase name="it_can_resolve_payment_service_via_alias" file="/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Feature/ServiceProviderTest.php" line="28" class="Prahsys\LaravelClerk\Tests\Feature\ServiceProviderTest" classname="Prahsys.LaravelClerk.Tests.Feature.ServiceProviderTest" assertions="1" time="0.147944"/>
+        <testcase name="it_can_resolve_prahsys_connector_from_container" file="/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Feature/ServiceProviderTest.php" line="12" class="Prahsys\LaravelClerk\Tests\Feature\ServiceProviderTest" classname="Prahsys.LaravelClerk.Tests.Feature.ServiceProviderTest" assertions="1" time="0.009974"/>
+        <testcase name="it_can_resolve_payment_service_from_container" file="/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Feature/ServiceProviderTest.php" line="20" class="Prahsys\LaravelClerk\Tests\Feature\ServiceProviderTest" classname="Prahsys.LaravelClerk.Tests.Feature.ServiceProviderTest" assertions="1" time="0.009788"/>
+      </testsuite>
+      <testsuite name="Prahsys\LaravelClerk\Tests\Unit\Http\PrahsysConnectorTest" file="/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/Http/PrahsysConnectorTest.php" tests="9" assertions="16" errors="0" failures="0" skipped="0" time="0.085611">
+        <testcase name="test_validates_base_urls_are_configured" file="/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/Http/PrahsysConnectorTest.php" line="119" class="Prahsys\LaravelClerk\Tests\Unit\Http\PrahsysConnectorTest" classname="Prahsys.LaravelClerk.Tests.Unit.Http.PrahsysConnectorTest" assertions="2" time="0.010651"/>
+        <testcase name="test_throws_exception_when_api_key_missing" file="/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/Http/PrahsysConnectorTest.php" line="77" class="Prahsys\LaravelClerk\Tests\Unit\Http\PrahsysConnectorTest" classname="Prahsys.LaravelClerk.Tests.Unit.Http.PrahsysConnectorTest" assertions="2" time="0.009543"/>
+        <testcase name="test_resolves_production_base_url_when_sandbox_mode_disabled" file="/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/Http/PrahsysConnectorTest.php" line="25" class="Prahsys\LaravelClerk\Tests\Unit\Http\PrahsysConnectorTest" classname="Prahsys.LaravelClerk.Tests.Unit.Http.PrahsysConnectorTest" assertions="1" time="0.010157"/>
+        <testcase name="test_resolves_sandbox_base_url_when_sandbox_mode_enabled" file="/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/Http/PrahsysConnectorTest.php" line="12" class="Prahsys\LaravelClerk\Tests\Unit\Http\PrahsysConnectorTest" classname="Prahsys.LaravelClerk.Tests.Unit.Http.PrahsysConnectorTest" assertions="1" time="0.009461"/>
+        <testcase name="test_includes_bearer_token_in_default_headers" file="/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/Http/PrahsysConnectorTest.php" line="38" class="Prahsys\LaravelClerk\Tests\Unit\Http\PrahsysConnectorTest" classname="Prahsys.LaravelClerk.Tests.Unit.Http.PrahsysConnectorTest" assertions="3" time="0.009695"/>
+        <testcase name="test_throws_exception_when_sandbox_api_key_missing_in_sandbox_mode" file="/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/Http/PrahsysConnectorTest.php" line="91" class="Prahsys\LaravelClerk\Tests\Unit\Http\PrahsysConnectorTest" classname="Prahsys.LaravelClerk.Tests.Unit.Http.PrahsysConnectorTest" assertions="2" time="0.008586"/>
+        <testcase name="test_throws_exception_when_production_api_key_missing_in_production_mode" file="/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/Http/PrahsysConnectorTest.php" line="105" class="Prahsys\LaravelClerk\Tests\Unit\Http\PrahsysConnectorTest" classname="Prahsys.LaravelClerk.Tests.Unit.Http.PrahsysConnectorTest" assertions="2" time="0.008712"/>
+        <testcase name="test_has_appropriate_timeout_configuration" file="/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/Http/PrahsysConnectorTest.php" line="68" class="Prahsys\LaravelClerk\Tests\Unit\Http\PrahsysConnectorTest" classname="Prahsys.LaravelClerk.Tests.Unit.Http.PrahsysConnectorTest" assertions="2" time="0.009198"/>
+        <testcase name="test_uses_production_api_key_when_sandbox_mode_disabled" file="/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/Http/PrahsysConnectorTest.php" line="54" class="Prahsys\LaravelClerk\Tests\Unit\Http\PrahsysConnectorTest" classname="Prahsys.LaravelClerk.Tests.Unit.Http.PrahsysConnectorTest" assertions="1" time="0.009607"/>
+      </testsuite>
+      <testsuite name="Prahsys\LaravelClerk\Tests\Unit\PackageStructureTest" file="/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/PackageStructureTest.php" tests="5" assertions="11" errors="0" failures="0" skipped="0" time="0.060480">
+        <testcase name="configuration_is_merged" file="/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/PackageStructureTest.php" line="37" class="Prahsys\LaravelClerk\Tests\Unit\PackageStructureTest" classname="Prahsys.LaravelClerk.Tests.Unit.PackageStructureTest" assertions="3" time="0.010218"/>
+        <testcase name="config_is_published" file="/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/PackageStructureTest.php" line="19" class="Prahsys\LaravelClerk\Tests\Unit\PackageStructureTest" classname="Prahsys.LaravelClerk.Tests.Unit.PackageStructureTest" assertions="2" time="0.012637"/>
+        <testcase name="package_has_required_directories" file="/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/PackageStructureTest.php" line="45" class="Prahsys\LaravelClerk\Tests\Unit\PackageStructureTest" classname="Prahsys.LaravelClerk.Tests.Unit.PackageStructureTest" assertions="4" time="0.017499"/>
+        <testcase name="service_provider_is_registered" file="/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/PackageStructureTest.php" line="11" class="Prahsys\LaravelClerk\Tests\Unit\PackageStructureTest" classname="Prahsys.LaravelClerk.Tests.Unit.PackageStructureTest" assertions="1" time="0.010590"/>
+        <testcase name="package_has_correct_namespace" file="/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/PackageStructureTest.php" line="30" class="Prahsys\LaravelClerk\Tests\Unit\PackageStructureTest" classname="Prahsys.LaravelClerk.Tests.Unit.PackageStructureTest" assertions="1" time="0.009536"/>
+      </testsuite>
+      <testsuite name="Prahsys\LaravelClerk\Tests\Unit\Http\Requests\ProcessPaymentRequestTest" file="/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/Http/Requests/ProcessPaymentRequestTest.php" tests="4" assertions="0" errors="4" failures="0" skipped="0" time="0.060303">
+        <testcase name="test_includes_merchant_endpoint_in_url" file="/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/Http/Requests/ProcessPaymentRequestTest.php" line="63" class="Prahsys\LaravelClerk\Tests\Unit\Http\Requests\ProcessPaymentRequestTest" classname="Prahsys.LaravelClerk.Tests.Unit.Http.Requests.ProcessPaymentRequestTest" assertions="0" time="0.018605">
+          <error type="ArgumentCountError">Prahsys\LaravelClerk\Tests\Unit\Http\Requests\ProcessPaymentRequestTest::test_includes_merchant_endpoint_in_url
+ArgumentCountError: Too few arguments to function Prahsys\LaravelClerk\Data\PaymentData::__construct(), 2 passed in /Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/Http/Requests/ProcessPaymentRequestTest.php on line 67 and at least 3 expected
+
+/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/src/Data/PaymentData.php:11
+/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/Http/Requests/ProcessPaymentRequestTest.php:67</error>
+        </testcase>
+        <testcase name="test_supports_card_present_payment_processing" file="/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/Http/Requests/ProcessPaymentRequestTest.php" line="81" class="Prahsys\LaravelClerk\Tests\Unit\Http\Requests\ProcessPaymentRequestTest" classname="Prahsys.LaravelClerk.Tests.Unit.Http.Requests.ProcessPaymentRequestTest" assertions="0" time="0.010974">
+          <error type="ArgumentCountError">Prahsys\LaravelClerk\Tests\Unit\Http\Requests\ProcessPaymentRequestTest::test_supports_card_present_payment_processing
+ArgumentCountError: Prahsys\LaravelClerk\Data\PaymentData::__construct(): Argument #3 ($description) not passed
+
+/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/src/Data/PaymentData.php:11
+/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/Http/Requests/ProcessPaymentRequestTest.php:89</error>
+        </testcase>
+        <testcase name="test_creates_payment_processing_request" file="/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/Http/Requests/ProcessPaymentRequestTest.php" line="14" class="Prahsys\LaravelClerk\Tests\Unit\Http\Requests\ProcessPaymentRequestTest" classname="Prahsys.LaravelClerk.Tests.Unit.Http.Requests.ProcessPaymentRequestTest" assertions="0" time="0.015461">
+          <error type="ArgumentCountError">Prahsys\LaravelClerk\Tests\Unit\Http\Requests\ProcessPaymentRequestTest::test_creates_payment_processing_request
+ArgumentCountError: Prahsys\LaravelClerk\Data\PaymentData::__construct(): Argument #3 ($description) not passed
+
+/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/src/Data/PaymentData.php:11
+/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/Http/Requests/ProcessPaymentRequestTest.php:19</error>
+        </testcase>
+        <testcase name="test_supports_authorization_only_payments" file="/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/Http/Requests/ProcessPaymentRequestTest.php" line="44" class="Prahsys\LaravelClerk\Tests\Unit\Http\Requests\ProcessPaymentRequestTest" classname="Prahsys.LaravelClerk.Tests.Unit.Http.Requests.ProcessPaymentRequestTest" assertions="0" time="0.015262">
+          <error type="ArgumentCountError">Prahsys\LaravelClerk\Tests\Unit\Http\Requests\ProcessPaymentRequestTest::test_supports_authorization_only_payments
+ArgumentCountError: Prahsys\LaravelClerk\Data\PaymentData::__construct(): Argument #3 ($description) not passed
+
+/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/src/Data/PaymentData.php:11
+/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/Http/Requests/ProcessPaymentRequestTest.php:50</error>
+        </testcase>
+      </testsuite>
+      <testsuite name="Prahsys\LaravelClerk\Tests\Unit\Http\Requests\CreatePaymentSessionRequestTest" file="/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/Http/Requests/CreatePaymentSessionRequestTest.php" tests="9" assertions="2" errors="7" failures="1" skipped="0" time="0.321285">
+        <testcase name="test_supports_authorize_operation" file="/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/Http/Requests/CreatePaymentSessionRequestTest.php" line="113" class="Prahsys\LaravelClerk\Tests\Unit\Http\Requests\CreatePaymentSessionRequestTest" classname="Prahsys.LaravelClerk.Tests.Unit.Http.Requests.CreatePaymentSessionRequestTest" assertions="0" time="0.028479">
+          <error type="Error">Prahsys\LaravelClerk\Tests\Unit\Http\Requests\CreatePaymentSessionRequestTest::test_supports_authorize_operation
+Error: Call to undefined method Prahsys\LaravelClerk\Http\Requests\CreatePaymentSessionRequest::body()
+
+/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/Http/Requests/CreatePaymentSessionRequestTest.php:134</error>
+        </testcase>
+        <testcase name="test_can_create_portal_session_with_mock_response" file="/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/Http/Requests/CreatePaymentSessionRequestTest.php" line="221" class="Prahsys\LaravelClerk\Tests\Unit\Http\Requests\CreatePaymentSessionRequestTest" classname="Prahsys.LaravelClerk.Tests.Unit.Http.Requests.CreatePaymentSessionRequestTest" assertions="0" time="0.203893">
+          <error type="Prahsys\LaravelClerk\Exceptions\PrahsysException">Prahsys\LaravelClerk\Tests\Unit\Http\Requests\CreatePaymentSessionRequestTest::test_can_create_portal_session_with_mock_response
+Prahsys\LaravelClerk\Exceptions\PrahsysException: The deployment could not be found on Vercel.
+
+/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/src/Exceptions/PrahsysException.php:36
+/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/src/Http/PrahsysConnector.php:101
+/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/Http/Requests/CreatePaymentSessionRequestTest.php:249</error>
+        </testcase>
+        <testcase name="test_can_create_session_with_mock_response" file="/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/Http/Requests/CreatePaymentSessionRequestTest.php" line="198" class="Prahsys\LaravelClerk\Tests\Unit\Http\Requests\CreatePaymentSessionRequestTest" classname="Prahsys.LaravelClerk.Tests.Unit.Http.Requests.CreatePaymentSessionRequestTest" assertions="0" time="0.019610">
+          <error type="Prahsys\LaravelClerk\Exceptions\PrahsysException">Prahsys\LaravelClerk\Tests\Unit\Http\Requests\CreatePaymentSessionRequestTest::test_can_create_session_with_mock_response
+Prahsys\LaravelClerk\Exceptions\PrahsysException: The deployment could not be found on Vercel.
+
+/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/src/Exceptions/PrahsysException.php:36
+/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/src/Http/PrahsysConnector.php:101
+/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/Http/Requests/CreatePaymentSessionRequestTest.php:214</error>
+        </testcase>
+        <testcase name="test_supports_none_operation_for_tokenization" file="/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/Http/Requests/CreatePaymentSessionRequestTest.php" line="139" class="Prahsys\LaravelClerk\Tests\Unit\Http\Requests\CreatePaymentSessionRequestTest" classname="Prahsys.LaravelClerk.Tests.Unit.Http.Requests.CreatePaymentSessionRequestTest" assertions="0" time="0.012348">
+          <error type="Error">Prahsys\LaravelClerk\Tests\Unit\Http\Requests\CreatePaymentSessionRequestTest::test_supports_none_operation_for_tokenization
+Error: Call to undefined method Prahsys\LaravelClerk\Http\Requests\CreatePaymentSessionRequest::body()
+
+/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/Http/Requests/CreatePaymentSessionRequestTest.php:160</error>
+        </testcase>
+        <testcase name="test_supports_card_present_transactions" file="/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/Http/Requests/CreatePaymentSessionRequestTest.php" line="180" class="Prahsys\LaravelClerk\Tests\Unit\Http\Requests\CreatePaymentSessionRequestTest" classname="Prahsys.LaravelClerk.Tests.Unit.Http.Requests.CreatePaymentSessionRequestTest" assertions="0" time="0.011228">
+          <error type="Error">Prahsys\LaravelClerk\Tests\Unit\Http\Requests\CreatePaymentSessionRequestTest::test_supports_card_present_transactions
+Error: Call to undefined method Prahsys\LaravelClerk\Http\Requests\CreatePaymentSessionRequest::body()
+
+/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/Http/Requests/CreatePaymentSessionRequestTest.php:192</error>
+        </testcase>
+        <testcase name="test_supports_different_portal_operations" file="/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/Http/Requests/CreatePaymentSessionRequestTest.php" line="86" class="Prahsys\LaravelClerk\Tests\Unit\Http\Requests\CreatePaymentSessionRequestTest" classname="Prahsys.LaravelClerk.Tests.Unit.Http.Requests.CreatePaymentSessionRequestTest" assertions="0" time="0.010051">
+          <error type="Error">Prahsys\LaravelClerk\Tests\Unit\Http\Requests\CreatePaymentSessionRequestTest::test_supports_different_portal_operations
+Error: Call to undefined method Prahsys\LaravelClerk\Http\Requests\CreatePaymentSessionRequest::body()
+
+/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/Http/Requests/CreatePaymentSessionRequestTest.php:108</error>
+        </testcase>
+        <testcase name="test_includes_merchant_endpoint_in_url" file="/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/Http/Requests/CreatePaymentSessionRequestTest.php" line="165" class="Prahsys\LaravelClerk\Tests\Unit\Http\Requests\CreatePaymentSessionRequestTest" classname="Prahsys.LaravelClerk.Tests.Unit.Http.Requests.CreatePaymentSessionRequestTest" assertions="1" time="0.010232"/>
+        <testcase name="test_creates_pay_session_request_without_portal" file="/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/Http/Requests/CreatePaymentSessionRequestTest.php" line="18" class="Prahsys\LaravelClerk\Tests\Unit\Http\Requests\CreatePaymentSessionRequestTest" classname="Prahsys.LaravelClerk.Tests.Unit.Http.Requests.CreatePaymentSessionRequestTest" assertions="1" time="0.013449">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Prahsys\LaravelClerk\Tests\Unit\Http\Requests\CreatePaymentSessionRequestTest::test_creates_pay_session_request_without_portal
+Saloon\Enums\Method Enum (POST, 'POST') does not match expected type "string".
+
+/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/Http/Requests/CreatePaymentSessionRequestTest.php:29</failure>
+        </testcase>
+        <testcase name="test_creates_pay_portal_session_request_with_portal_configuration" file="/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/Http/Requests/CreatePaymentSessionRequestTest.php" line="43" class="Prahsys\LaravelClerk\Tests\Unit\Http\Requests\CreatePaymentSessionRequestTest" classname="Prahsys.LaravelClerk.Tests.Unit.Http.Requests.CreatePaymentSessionRequestTest" assertions="0" time="0.011993">
+          <error type="Error">Prahsys\LaravelClerk\Tests\Unit\Http\Requests\CreatePaymentSessionRequestTest::test_creates_pay_portal_session_request_with_portal_configuration
+Error: Call to undefined method Prahsys\LaravelClerk\Http\Requests\CreatePaymentSessionRequest::body()
+
+/Users/stephen/Herd/fable/packages/prahsys/laravel-clerk/tests/Unit/Http/Requests/CreatePaymentSessionRequestTest.php:66</error>
+        </testcase>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

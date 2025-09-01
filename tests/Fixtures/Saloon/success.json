@@ -1,0 +1,15 @@
+{
+    "statusCode": 404,
+    "headers": {
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "Content-Length": "85",
+        "Content-Type": "application\/json",
+        "Date": "Mon, 01 Sep 2025 01:50:49 GMT",
+        "Server": "Vercel",
+        "Strict-Transport-Security": "max-age=63072000",
+        "X-Vercel-Error": "DEPLOYMENT_NOT_FOUND",
+        "X-Vercel-Id": "cle1::kstds-1756691449733-425c83b272cb"
+    },
+    "data": "{\"error\": {\"code\": \"404\", \"message\": \"The deployment could not be found on Vercel.\"}}",
+    "context": []
+}

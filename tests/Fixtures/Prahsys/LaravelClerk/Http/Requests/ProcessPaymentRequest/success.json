@@ -1,0 +1,28 @@
+{
+  "success": true,
+  "message": "Payment processed successfully",
+  "data": {
+    "id": "TXN_789456123",
+    "status": "CAPTURED",
+    "payment": {
+      "id": "PAYMENT-123",
+      "amount": 99.99,
+      "currency": "USD",
+      "description": "Premium subscription",
+      "reference": "REF-12345",
+      "capturedAt": "2025-09-01T14:30:00Z"
+    },
+    "session": {
+      "id": "SESSION0002776555072F1187121H61"
+    },
+    "customer": {
+      "email": "customer@example.com"
+    },
+    "card": {
+      "last4": "4242",
+      "brand": "visa",
+      "expiryMonth": "12",
+      "expiryYear": "2027"
+    }
+  }
+}

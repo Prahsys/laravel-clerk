@@ -1,0 +1,68 @@
+{
+    "name": "prahsys/laravel-clerk",
+    "description": "Laravel integration package for Prahsys payments with session management and webhooks",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["laravel", "payments", "prahsys", "clerk", "ecommerce", "webhooks"],
+    "authors": [
+        {
+            "name": "Prahsys Team",
+            "email": "developers@prahsys.com",
+            "homepage": "https://prahsys.com"
+        }
+    ],
+    "homepage": "https://github.com/Prahsys/laravel-clerk",
+    "support": {
+        "issues": "https://github.com/Prahsys/laravel-clerk/issues",
+        "source": "https://github.com/Prahsys/laravel-clerk"
+    },
+    "require": {
+        "php": "^8.2",
+        "laravel/framework": "^11.0|^12.0",
+        "saloonphp/saloon": "^3.0",
+        "spatie/laravel-data": "^4.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0|^10.0",
+        "phpunit/phpunit": "^10.0|^11.0",
+        "laravel/pint": "^1.0",
+        "phpstan/phpstan": "^1.0",
+        "mockery/mockery": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Prahsys\\LaravelClerk\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Prahsys\\LaravelClerk\\Tests\\": "tests/",
+            "Prahsys\\LaravelClerk\\Database\\Factories\\": "database/factories/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
+        "format": "vendor/bin/pint",
+        "format-check": "vendor/bin/pint --test",
+        "analyse": "vendor/bin/phpstan analyse"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Prahsys\\LaravelClerk\\ClerkServiceProvider"
+            ],
+            "aliases": {
+                "Clerk": "Prahsys\\LaravelClerk\\Facades\\Clerk"
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

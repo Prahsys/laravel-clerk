@@ -1,0 +1,14 @@
+{
+  "success": true,
+  "message": "Session created",
+  "data": {
+    "id": "SESSION0002776555072F1187121H61",
+    "status": "CREATED",
+    "payment": {
+      "id": "PAYMENT-123",
+      "amount": 99.99,
+      "currency": "USD",
+      "description": "Premium subscription"
+    }
+  }
+}

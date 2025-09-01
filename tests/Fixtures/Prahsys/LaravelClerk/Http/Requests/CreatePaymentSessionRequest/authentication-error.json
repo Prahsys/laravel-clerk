@@ -1,0 +1,7 @@
+{
+  "error": {
+    "code": "authentication_required",
+    "message": "A valid API key is required for this request",
+    "type": "authentication_error"
+  }
+}
