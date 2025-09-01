@@ -5,11 +5,11 @@ declare(strict_types=1);
 namespace Prahsys\LaravelClerk\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Prahsys\LaravelClerk\Models\PaymentSession;
+use Prahsys\LaravelClerk\Models\PrahsysPaymentSession;
 
-class PaymentSessionFactory extends Factory
+class PrahsysPaymentSessionFactory extends Factory
 {
-    protected $model = PaymentSession::class;
+    protected $model = PrahsysPaymentSession::class;
 
     public function definition(): array
     {

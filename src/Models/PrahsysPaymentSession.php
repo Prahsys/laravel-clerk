@@ -8,10 +8,10 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Prahsys\LaravelClerk\Database\Factories\PaymentSessionFactory;
+use Prahsys\LaravelClerk\Database\Factories\PrahsysPaymentSessionFactory;
 use Prahsys\LaravelClerk\Traits\HasAuditLog;
 
-class PaymentSession extends Model
+class PrahsysPaymentSession extends Model
 {
     use HasFactory, SoftDeletes, HasAuditLog;
 
@@ -81,8 +81,8 @@ class PaymentSession extends Model
         return !empty($this->portal_configuration);
     }
 
-    protected static function newFactory(): PaymentSessionFactory
+    protected static function newFactory(): PrahsysPaymentSessionFactory
     {
-        return PaymentSessionFactory::new();
+        return PrahsysPaymentSessionFactory::new();
     }
 }

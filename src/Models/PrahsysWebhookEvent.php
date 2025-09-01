@@ -8,9 +8,9 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Prahsys\LaravelClerk\Database\Factories\WebhookEventFactory;
+use Prahsys\LaravelClerk\Database\Factories\PrahsysWebhookEventFactory;
 
-class WebhookEvent extends Model
+class PrahsysWebhookEvent extends Model
 {
     use HasFactory, SoftDeletes;
 
@@ -89,8 +89,8 @@ class WebhookEvent extends Model
         ]);
     }
 
-    protected static function newFactory(): WebhookEventFactory
+    protected static function newFactory(): PrahsysWebhookEventFactory
     {
-        return WebhookEventFactory::new();
+        return PrahsysWebhookEventFactory::new();
     }
 }

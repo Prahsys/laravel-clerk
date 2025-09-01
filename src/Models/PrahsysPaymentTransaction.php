@@ -8,10 +8,10 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Prahsys\LaravelClerk\Database\Factories\PaymentTransactionFactory;
+use Prahsys\LaravelClerk\Database\Factories\PrahsysPaymentTransactionFactory;
 use Prahsys\LaravelClerk\Traits\HasAuditLog;
 
-class PaymentTransaction extends Model
+class PrahsysPaymentTransaction extends Model
 {
     use HasFactory, SoftDeletes, HasAuditLog;
 
@@ -85,8 +85,8 @@ class PaymentTransaction extends Model
         return $this->status === 'failed';
     }
 
-    protected static function newFactory(): PaymentTransactionFactory
+    protected static function newFactory(): PrahsysPaymentTransactionFactory
     {
-        return PaymentTransactionFactory::new();
+        return PrahsysPaymentTransactionFactory::new();
     }
 }
