@@ -1,9 +1,9 @@
 {
-    "name": "prahsys/laravel-clerk",
+    "name": "prahsys/laravel-cashier",
     "description": "Laravel integration package for Prahsys payments with session management and webhooks",
     "type": "library",
     "license": "MIT",
-    "keywords": ["laravel", "payments", "prahsys", "clerk", "ecommerce", "webhooks"],
+    "keywords": ["laravel", "payments", "prahsys", "cashier", "ecommerce", "webhooks"],
     "authors": [
         {
             "name": "Prahsys Team",
